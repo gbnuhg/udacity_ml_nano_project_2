@@ -1,47 +1,70 @@
 # Operationalizing Machine Learning
 ## Table of Contents
 - Overview
+- Process
 - Architectural Diagram
 - How to Improve
 - Screenshots
 
 ## Overview of the Project
+In Project 2 of the Udacity Machine Learning Nanodegree, we are taking another look at the Bank Marketing Training data. With this data, we are creating an AutoML job and then deploying the best classification model to predict whether a customer signed up through the marketing campaign. Once deployed, we enabled application insights before consuming and deploying the model using Swagger. Using the endpoint.py script provided with the correct payload, we got a valid response before jumping over to the Jupyter Notebook to create, publish and consume the pipeline.
+
+## Process
+### Step 1 (optional) was skipped
+### Step 2: Automated ML Experiment
 The project started with an AutoML run. I uploaded the bank marketing dataset, created the experiment and computer cluster, and ran a classification experiment.
 
+Image Below: Bank Training Dataset shown in AutoML
 ![Dataset](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/119867c7-0530-4c20-84d1-e5e19d13acac)
 
+Image Below: AutoML Job Completion for Bank Marketing Data
 ![AutoML Complete](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/8c3eabda-3444-420b-904d-87aadaab292e)
 
-Through this, I identified the best model as the VotingEnsemble.
+### Step 3: Deploy the Best Model
+Through this, I identified the best model as the VotingEnsemble. Next, I deployed this model to the web.
 
+Image Below: Voting Ensemble shown as the best model.
 ![Best Model](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/6da20626-8822-4188-ad83-509720deeeae)
 
-Next, I deployed this model, but not before enabling authentication and choosing the ACI option. I ran logs.py to view the logs and enable application insights.
+### Step 4:  
+After deployment, I enabled authentication by running logs.py to view the logs.
 
+Image Below: Enabled Application Insights
+![Application Insight Enabled](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/84647784-3c73-4c78-aa10-7db212786bf5)
+
+Image Below: Logs after running logs.py
 ![Logs](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/96d9ed90-b6f2-4ed2-a0e9-919c8658290a)
 
-![Application Insight Enabled](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/84647784-3c73-4c78-aa10-7db212786bf5)
+### Step 5: Swagger Deployment
 
 Once this ran correctly, I downloaded the swagger.json file and added it to the Swagger folder within the Udacity starter folder. I ran swagger.sh and serve.py to initiate swagger on the local host and then to open my model on port 8000.
 
-![Local Host](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/62e3882d-b7f4-4916-a8f6-b80e769ab3dd)
+Image Below: Local Host on port 8000 once Swagger was initiated
+![Local Host](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/62e3882d-b7f4-4916-a8f6-b80e769ab3dd) 
 
+### Step 6: Consume Model Endpoints
 Then I updated the scoring_uri and the key in the code that I pulled from the Consume section of ML Studio. The endpoint result from my test is below.
 
+Image Below: Valid endpoint.py result when run in Git Bash
 ![Endpoint Result](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/19c7cfb9-4552-46d7-ae54-aaa496066279)
 
-Next, I uploaded the aml-exercise-pipelines-with-automated-machine-learning-step.ipynb file to Notebook within ML Studio. I updated the variables to match my ML Studio credentials, uploaded the config.json to the notebook folder, and ran through all the cells. The pipeline was created in Azure ML Studio and it was completed.
+### Step 7: Create, Publish, and Consume a Pipeline
+Next, I uploaded the aml-exercise-pipelines-with-automated-machine-learning-step.ipynb file to Notebook within ML Studio. I updated the variables to match my ML Studio credentials, uploaded the config.json to the notebook folder, and ran through all the cells. The pipeline was created in Azure ML Studio and it ran to completion. Below I've noted a screenshot from my Jupyter Notebook (which is also attached), the Pipeline Endpoints, and the Published Pipeline Overview. Additional information is above each image.
 
-![Published Pipelines](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/26f9a2c4-787b-4474-87c2-950854f85122)
-![AutoML Bank Marketing CSV](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/93f455d6-e35c-4977-8b09-21433657572e)
-![Completed Pipeline Overview](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/403af44f-7c2d-4f90-80ab-336debf89d14)
-![Pipeline Completed](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/8b1c6b20-0286-403c-b047-4ce405c99ade)
-![Pipeline Endpoint](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/91bf2aaa-9751-40ac-9103-650c04957128)
-![Pipeline Bank Rest Endpoint](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/b1a99fb5-58b6-4992-8afb-8c030973ca3b)
+Image Below: Unfortunately, the code was run in VS Code without the option to run it in Jupyter Notebook (shown in the second image). In place of the RunDetailsWidget, I've included the cell underneath it that shows the pipeline was deployed and finalized. I've also included the Jupyter Notebook if you would like to check that.
+![RunDetailsWidget](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/5614326b-8c4d-4c67-9eeb-e7776a04dcdc)
+![Screenshot 2024-05-21 120437](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/15a11879-7f15-4899-920c-b70986f13ce8)
+
+Image Below: Pipeline Endpoints showing a finished deployment
+![Pipeline Endpoints](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/630a3a24-13a6-4155-a8b2-0e7a9bbc26dd)
+
+Image Below: Published Pipeline Overview from the valid pipeline deployment for the Bank Marketing data
+![Published Pipeline Overview](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/67649a8c-da14-4a1b-a01d-78abba4ed5da)
 
 ## Architectural Diagram
-The image shows a diagram of the architecture for the ML process
+The image shows a diagram of the architecture for the ML process.
 
+Image Below: ML Workflow pulled from the Udacity Course Walkthrough
 ![ML Workflow](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/f120b9c9-f987-4724-8ba6-511d038fb1fc)
 
 ## Improvement
