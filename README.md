@@ -7,7 +7,9 @@
 - Screenshots
 
 ## Overview of the Project
-In Project 2 of the Udacity Machine Learning Nanodegree, we are taking another look at the Bank Marketing Training data. With this data, we are creating an AutoML job and then deploying the best classification model to predict whether a customer signed up through the marketing campaign. Once deployed, we enabled application insights before consuming and deploying the model using Swagger. Using the endpoint.py script provided with the correct payload, we got a valid response before jumping over to the Jupyter Notebook to create, publish and consume the pipeline.
+This project consists of using Azure to configure a machine learning model that will be deployed in the cloud and then consumed. Following that, we will create, publish, and consume the pipeline.
+
+We are again taking a look at the Bank Marketing Training data. With this data, we are creating an AutoML job and then deploying the best classification model to predict whether a customer signed up through the marketing campaign. Once deployed, we enabled application insights before consuming and deploying the model using Swagger. Using the endpoint.py script provided with the correct payload, we got a valid response before jumping over to the Jupyter Notebook to create, publish and consume the pipeline.
 
 ## Process
 ### Step 1 (optional) was skipped
