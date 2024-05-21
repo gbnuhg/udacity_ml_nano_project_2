@@ -31,6 +31,8 @@ Then I updated the scoring_uri and the key in the code that I pulled from the Co
 ![Endpoint Result](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/19c7cfb9-4552-46d7-ae54-aaa496066279)
 
 Next, I uploaded the aml-exercise-pipelines-with-automated-machine-learning-step.ipynb file to Notebook within ML Studio. I updated the variables to match my ML Studio credentials, uploaded the config.json to the notebook folder, and ran through all the cells. The pipeline was created in Azure ML Studio and it was completed.
+
+![Published Pipelines](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/26f9a2c4-787b-4474-87c2-950854f85122)
 ![AutoML Bank Marketing CSV](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/93f455d6-e35c-4977-8b09-21433657572e)
 ![Completed Pipeline Overview](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/403af44f-7c2d-4f90-80ab-336debf89d14)
 ![Pipeline Completed](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/8b1c6b20-0286-403c-b047-4ce405c99ade)
