@@ -48,6 +48,7 @@ Image Below: Local Host on port 8000 once Swagger was initiated
 Then I updated the scoring_uri and the key in the code that I pulled from the Consume section of ML Studio. The endpoint result from my test is below.
 
 Image Below: Valid endpoint.py result when run in Git Bash
+
 ![Endpoint Result](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/19c7cfb9-4552-46d7-ae54-aaa496066279)
 
 ### Step 7: Create, Publish, and Consume a Pipeline
