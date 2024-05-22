@@ -81,5 +81,5 @@ Image Below: ML Workflow pulled from the Udacity Course Walkthrough
 - Alter the exit criteria for a longer duration to attempt more models when choosing the best model.
 
 ## Screenshots & Video Link
-- Video Link: https://youtu.be/hjP8bwpimLI
+- Video Link: https://youtu.be/zdtfn_jKgqI
 - Screenshots in the accompanying folder and above overview
