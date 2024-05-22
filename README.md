@@ -54,9 +54,8 @@ Image Below: Valid endpoint.py result when run in Git Bash
 ### Step 7: Create, Publish, and Consume a Pipeline
 Next, I uploaded the aml-exercise-pipelines-with-automated-machine-learning-step.ipynb file to Notebook within ML Studio. I updated the variables to match my ML Studio credentials, uploaded the config.json to the notebook folder, and ran through all the cells. The pipeline was created in Azure ML Studio and it ran to completion. Below I've noted a screenshot from my Jupyter Notebook (which is also attached), the Pipeline Endpoints, and the Published Pipeline Overview. Additional information is above each image.
 
-Image Below: Unfortunately, the code was run in VS Code without the option to run it in Jupyter Notebook (shown in the second image). In place of the RunDetailsWidget, I've included the cell underneath it that shows the pipeline was deployed and finalized. I've also included the Jupyter Notebook if you would like to check that.
-![RunDetailsWidget](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/5614326b-8c4d-4c67-9eeb-e7776a04dcdc)
-![Screenshot 2024-05-21 120437](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/15a11879-7f15-4899-920c-b70986f13ce8)
+Image Below: Jupyter Notebook showing the RunDetails Widget
+![RunDetailsWidgetJupyter](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/296feda0-7cb9-4ed1-bed6-e730cfa7c3a9)
 
 Image Below: Pipeline Endpoints showing a finished deployment
 ![Pipeline Endpoints](https://github.com/gbnuhg/udacity_ml_nano_project_2/assets/132493261/630a3a24-13a6-4155-a8b2-0e7a9bbc26dd)
