@@ -82,4 +82,4 @@ Image Below: ML Workflow pulled from the Udacity Course Walkthrough
 
 ## Screenshots & Video Link
 - Video Link: https://youtu.be/zdtfn_jKgqI
-- Screenshots in the accompanying folder and above overview
+- Screenshots in the accompanying folder
